@@ -1,1 +1,137 @@
 
+body{
+    background-color: #FBFBFE;
+    font-family: 'Inter';
+    color: #050316 ;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    padding-top: 0;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-weight: 600;
+}
+#logo{
+    font-size: 24px;
+}
+
+h1{
+    margin-top: 72px;
+    margin-left: 100px;
+    margin-bottom: 32px;
+    
+}
+
+#about-me{
+    margin-left: 100px;
+    max-width: 660px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 88px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 140px;
+}
+.line{
+    height: 2px;
+    width: 100px;
+    margin-left: -4px;
+    background-color: #050316;
+    flex-shrink: 0;
+}
+
+.icons{
+       width: 100%;
+       height:auto;
+}
+
+.icon-background{
+    width: 28px;
+    height: 28px;
+    background-color: #EDEDED;
+   padding: 8px;
+   border-radius: 50%;
+   align-items: center;
+   display: flex;
+}
+#cv-icon{
+    border-radius: 24px;
+    width: auto;
+    gap: 8px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.icon-background:hover{
+    background-color:white;
+    box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.25);
+    transform: scale(1.04);
+}
+
+    /*Projects Styling*/
+h2{
+    margin-left: 100px;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+/*to put the content in the middle of the page */
+section{
+    width: 100%;       
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; 
+    
+}
+.grid{
+    margin-left: 120px;
+    margin-right: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 100px; /* Space between the mockup cards */
+    padding: 50px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+.card-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-title{
+    display: flex;
+    gap: 8px;
+}
+
+.card-tags{
+    display: flex;
+}
