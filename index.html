@@ -2,7 +2,7 @@
 <html lang ="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Reman Alamoudi</title>
         
         <!--CSS here-->
@@ -15,21 +15,24 @@
 
     </head>
 
-    <body>
+    <body id="top">
+
+        <!--Header and Nav Section-->
         <header>
             <nav class="navbar">
                 <p id="logo">RA</p>
                 <ul class="nav-links">
-                    <li><a href="home">Home</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="education">Education</a></li>
-                    <li><a href="skills">Skills</a></li>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
                 </ul>
             </nav>
         </header>
 
-        <section class="description">
-            <h1 id="home">Hi, I'm Reman Alamoudi</h1>
+        <!--Hero Section-->
+        <section class="Hero" >
+            <h1 >Hi, I'm Reman Alamoudi</h1>
             <p id="about-me">Software Engineering student specializing in UX/UI and front-end development. I design clean, user-centered interfaces backed by solid engineering and thoughtful design decisions.</p>
             
             <div class="social-links">
@@ -56,11 +59,13 @@
             </div>
         </section>
 
+        <!--Project Section-->
         <section class="projects">
             <h2 id="projects">Projects</h2>
             <article class="grid">
+                <a href="https://github.com/r-omar71/Atelier" target="_blank" rel="noopener noreferrer">
                 <div class="card">
-                    <img src="media/Atelier.png" alt="Atelier Interfaces">
+                    <img src="media/Atelier.png" alt="Atelier UI Interfaces" class="project-img">
                     <div class="card-text">
                         <div class="card-heading">
                             <div class="card-title">
@@ -77,13 +82,15 @@
                             </div>
                     </div>
                 </div>
+                </a>
 
+                <a href="https://github.com/r-omar71/Sanad" target="_blank" rel="noopener noreferrer">
                 <div class="card">
-                    <img src="media/Atelier.png" alt="Atelier Interfaces">
+                    <img src="media/Sanad.png" alt="Sanad UI Interfaces" class="project-img">
                     <div class="card-text">
                         <div class="card-heading">
                             <div class="card-title">
-                                <h3>Atelier</h3>
+                                <h3>Sanad</h3>
                                 <img src="media/github.svg" alt="Github icon">
                             </div>
                             <div class="card-tags">
@@ -92,32 +99,118 @@
                             </div>
                         </div>
                             <div class="card-description">
-                                <p>A full-stack web application for showcasing and managing creative work with a clean, responsive user experience.</p>
+                                <p>A volunteer coordination platform that connects people with local charities and simplifies community giving.</p>
                             </div>
                     </div>
                 </div>
+                </a>
 
-                <div class="card">
-                    <img src="media/Atelier.png" alt="Atelier Interfaces">
+                <a href="https://github.com/r-omar71/SeedSync" target="_blank" rel="noopener noreferrer">
+                 <div class="card">
+                    <img src="media/SeedSync.png" alt="SeedSync UI Interfaces" class="project-img">
                     <div class="card-text">
                         <div class="card-heading">
                             <div class="card-title">
-                                <h3>Atelier</h3>
-                                <img src="media/github.svg" alt="Github icon">
+                                <h3>SeedSync</h3>
+                                <img src="media/github.svg" alt="Github icon" >
                             </div>
                             <div class="card-tags">
-                                <p class="tag">Web Dev</p>
-                                <p class="tag">Full Stack</p>
+                                <p class="tag">Desgin</p>
+                                <p class="tag">UX/UI</p>
                             </div>
                         </div>
                             <div class="card-description">
-                                <p>A full-stack web application for showcasing and managing creative work with a clean, responsive user experience.</p>
+                                <p>A smart plant-care app that helps users track watering schedules, monitor growth, and keep plants healthy.</p>
                             </div>
+                    </div>
+                </div>
+                </a>
+
+            </article>
+        </section>
+
+        <!--Education Section-->
+        <section class="education" id="education">
+            <div class="education-container">
+                <div class="education-title"><h2 >Education</h2></div>
+                <div class="education-card">
+                    <h3 class="education-heading">Bachelor's Degree in Software Engineering</h3>
+                    <p class="education-details"><strong>University of Jeddah</strong>  2022 - 2027</p>
+                    <h3 class="education-heading">Certificates & Professional Development</h3>
+                    <p class="education-details">UX/UI Design: User Interface & Experience — Hash Plus (04/2025 - Present)</p>
+                    <p class="education-details">Getting Started with Git and GitHub — Coursera (12/2024 - Present)</p>
+                    <p class="education-details">Project Management Using Agile — Monshaat (12/2025 - Present)</p>
+                </div>
+            </div>    
+        </section>
+
+        <!--Skills Section-->
+        <section class="skills" id="skills">
+            <div class="skills-title">
+                <h2>Skills</h2>
+                <div class="dot"></div>
+            </div>
+            <article class="skills-grid">
+                <div class="skills-card">
+                    <h3>Fontend</h3>
+                    <div class="skills-details">
+                        <p>HTML5, CSS3, JavaScript</p>
+                        <p>Responisve Design</p>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h3>Tools & Design</h3>
+                    <div class="skills-details">
+                        <p>Git, GitHub</p>
+                        <p>Figma (Wireframing, Prototyping)</p>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h3>Programming</h3>
+                    <div class="skills-details">
+                        <p>Java</p>
+                        <p>C++</p>
+                    </div>
+                </div>
+                <div class="skills-card">
+                    <h3>Engineering & Process</h3>
+                    <div class="skills-details">
+                        <p>Requirements Engineering (SRS)</p>
+                        <p>Software Modeling (UML)</p>
+                        <p>Software Development Lifecycle (SDLC)</p>
                     </div>
                 </div>
             </article>
-
-            
         </section>
+
+        <!--Footer-->
+        <footer>
+            <div class="footer-top">
+                <p>Bridging the gap between complex engineering logic and intuitive user experience.</p>
+                <div class="footer-icons">
+                    <a href="https://github.com/r-omar71" target="_blank" rel="noopener noreferrer">
+                        <img src="media/github.svg" alt="Github Profile" class="footer-icon">
+                </a>
+                    
+                <a href="mailto:i.remanamoudi@gmail.com">
+                         <img src="media/email.svg" alt="Send me an email" class="footer-icon">
+                 </a>
+
+                <a href="media/Reman_Alamoudi_CV.pdf" download class="footer-cv-button"> 
+                  <img src="media/download.svg" alt="" aria-hidden="true" class="footer-icon">
+                  <span>CV</span>
+                </a>
+                </div>
+                <a href="#top">
+                <div class="back-to-top">
+                    <span>Back to Top</span>
+                    <img src="media/top.svg" alt="">
+                </div>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Reman Alamoudi • Designed & Coded by Reman Alamoudi</p>
+            </div>
+        </footer>
     </body>
 </html>
