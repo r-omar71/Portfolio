@@ -133,7 +133,7 @@ h3{
          /*Projects Styling*/
 /*to put the content in the middle of the page */
 section{
-    width: 100%;       
+    width: 90%;       
     max-width: 1200px; 
     margin-left: auto;
     margin-right: auto;
@@ -177,11 +177,12 @@ section{
     display: flex;
 }
 
-.project-img{
-    border-radius: 6%;
-    margin-bottom: 16px;
-    width: 400px;
-    height: 300px;
+.project-img {
+    width: 100%;       
+    max-width: 400px;  
+    height: auto;      
+    display: block;
+    border-radius: 24px;
 }
 
 .card-tags{
@@ -226,26 +227,23 @@ section{
     margin-bottom: 88px;
     /*Centers the content of the section centered vertically and horizantly*/
     display: flex;
-    flex-direction: row;
     justify-content: center; 
     align-items: center;
     
-}
-
-.education-container{
-    display: flex;
     
 }
 
 .education-card{
     background-color: white;
     padding: 60px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     border-radius: 20px;
      box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.25);
+     width: auto;
      height: 360px;
-     margin-right: 160px;
 
 
 }
@@ -263,12 +261,13 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    height: 320px;
-    width: 340px;
+    
 }
-.education-title h3{
-    text-align: left;
+
+.education h2{
+    text-align: center;
+    margin-left: 0px;
+    padding-bottom: 0px;
 }
 
 
@@ -310,7 +309,7 @@ section{
 .skills h3{
     background-color: white;
     margin-right: 20px;
-    width: 280px;
+    max-width: 280px;
     height: 40px;
     display: flex;
     flex-direction: column;
@@ -336,7 +335,7 @@ footer{
     background-color:#1A1A1A;
     color: white;
     padding: 40px 40px;
-    min-height: 160px;
+    min-height: 10px;
     margin-top: 100px ;
 }
 .footer-top{
@@ -403,3 +402,264 @@ footer p {
 }
 
 
+    /*Responsive layout*/
+
+@media screen and (max-width: 1128px) {
+   
+    .grid { margin-left: 4%; margin-right: 4%; gap: 10px;}
+    .skills-grid { margin-left: 180px; }
+    h1, #about-me, h2 { margin-left: 40px; }
+    
+    
+}
+
+@media screen and (max-width: 992px) {
+   
+    /*Hero query*/
+h1, #about-me, h2 {
+     margin-left: 40px; 
+    }
+h1{
+    font-size: 28px;
+}
+p#about-me{
+    font-size: 18px;
+    padding-right:40px ;
+}
+
+    /*Projects query*/
+.grid {
+    margin-left: 20px; margin-right: 20px; 
+}
+
+    /*Education query*/
+.education-details{
+     font-size: 14px;
+}
+
+    /*Skills query*/
+.skills-grid {
+     margin-left: 80px; 
+    }
+
+    /*footer query*/
+footer{
+    padding: 20px;
+}
+ .footer-top{
+     gap: 20px;     
+ }
+ footer p {
+     font-size: 12px;
+ }
+ span{
+   font-size: 12px;
+    }
+.footer-icons{
+      gap: 8px;
+    }
+.footer-bottom p{
+    font-size: 10px;
+    padding-top: 20px;
+ }   
+  
+}
+
+
+@media screen and (max-width: 768px) {
+    /*Navbar query*/
+.navbar{
+    padding:0 40px;
+    height: 60px;
+}
+ .nav-links{
+    display: flex;
+    list-style: none;
+    gap:24px;
+    font-size: 16px;
+}
+
+#logo{
+    font-size: 24px;
+   
+}
+
+    /*Hero query*/
+h1{
+    margin-top: 140px;
+}
+    /*Project query*/
+.grid{
+    display: grid;
+    grid-template-columns: 1fr ; 
+    gap: 32px; 
+    justify-content: center;
+}
+
+.card{
+    max-width: 400px;
+    margin-right: auto ;
+    margin-left: auto ;
+    box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.1);
+}
+
+    /*Education query*/
+.education-card{
+    padding: 40px;
+    margin: 0 60px 0px 60px;
+     width: auto;
+     height: 280px;
+}
+.education-heading{
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+.education-details{
+    font-size: 14px;
+    color: #878787;
+    padding-top: 4px;
+}
+
+    /*skills query*/
+.skills-grid{
+    margin: 0 auto ;
+    justify-content: center;
+    justify-items: center;
+    
+}
+.skills h3{
+    max-width: 240px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.skills-details{
+    width: 240px;
+    font-size: 12px;
+}
+
+    /*footer query*/
+.footer-top{
+    flex-direction: column;
+    text-align: center;
+}
+.back-to-top{
+    max-width: 96px;
+    margin: 0 auto ;
+
+}
+.back-to-top span{
+    font-size: 10px;
+}
+
+}
+@media screen and (max-width: 576px) {
+/*Navigation query*/
+ .navbar{
+    padding: 0 20px;
+}
+
+#logo{
+    padding-right: 20px;
+}
+.nav-links{
+    font-size: 14px;
+}
+
+    /*Hero query*/
+
+h1{
+    font-size: 24px;
+    margin-left: 8px;
+}
+p#about-me{
+    font-size: 14px;
+    padding-right:20px ;
+    margin-left: 8px;
+    letter-spacing: 0;
+    word-spacing: 1px;
+    line-height: 24px;
+    margin-bottom: 40px;      
+    }
+.line{
+    width: 60px;
+}
+.social-links{
+    margin-bottom: 80px;
+}
+
+.icon-background{
+    width: 36px;
+    height: 36px;
+}
+
+    /*Project query*/
+
+h2{
+    font-size: 20px;
+}
+.card-title h3{
+    font-size: 16px;
+}
+.card-title img{
+    width: 20px;
+}
+.card-description p{
+    font-size: 12px;
+}
+.tag{
+
+    font-size: 10px;
+    font-weight: 50;
+    background-color: #EDEDED;
+    border-radius: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 18px;
+}
+
+    /*Education query*/
+
+.education-card{
+    padding: 20px;
+    margin: 0 20px 0px 20px;
+     width: auto;
+     height: auto;
+}
+.education-heading{
+    padding-top: 20px;
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+.education-details{
+    font-size: 12px;
+    color: #878787;
+    padding-top: 4px;
+    line-height: 20px;
+}
+
+    /*Skills query*/
+.skills-grid{
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+}
+
+.skills h3{
+    max-width: 200px;
+    margin: 0;
+}
+
+.skills-details{
+    width: 200px;
+}
+
+    /*Footer query*/
+footer{
+    margin-top: 40px;
+}
+
+}
